@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "name": "Mojito",
+    "category": "Rum",
+    "ingredients": [
+      "50ml białego rumu",
+      "30ml soku z limonki",
+      "20ml syropu cukrowego",
+      "8-10 listków mięty",
+      "Woda gazowana",
+      "Lód"
+    ],
+    "instructions": "1. Wmuraj miętę z syropem w szklance\n2. Dodaj sok z limonki i rum\n3. Wypełnij szklankę lodem\n4. Dolej wodą gazowaną\n5. Wymieszaj delikatnie",
+    "rating": 4.5,
+    "ratings": [
+      5,
+      4,
+      5,
+      4
+    ],
+    "createdAt": "2025-06-10T12:22:15.895Z"
+  },
+  {
+    "id": 2,
+    "name": "Cosmopolitan",
+    "category": "Vodka",
+    "ingredients": [
+      "40ml wódki",
+      "15ml triple sec",
+      "30ml soku żurawinowego",
+      "15ml soku z limonki",
+      "Skórka pomarańczy"
+    ],
+    "instructions": "1. Wszystkie składniki wstrząśnij z lodem w shakerze\n2. Przecedź do schłodzonej szklanki martini\n3. Udekoruj skórką pomarańczy",
+    "rating": 3.7,
+    "ratings": [
+      4,
+      5,
+      4,
+      4,
+      3,
+      2
+    ],
+    "createdAt": "2025-06-10T12:22:15.895Z"
+  },
+  {
+    "id": 3,
+    "name": "Piña Colada",
+    "category": "Rum",
+    "ingredients": [
+      "60ml białego rumu",
+      "90ml mleka kokosowego",
+      "90ml soku ananasowego",
+      "2 łyżki cukru",
+      "Lód",
+      "Plasterek ananasa do dekoracji"
+    ],
+    "instructions": "1. Wszystkie składniki zmiksuj z lodem w blenderze\n2. Przelej do wysokiej szklanki\n3. Udekoruj plasterkiem ananasa\n4. Podawaj z słomką",
+    "rating": 4.7,
+    "ratings": [
+      5,
+      5,
+      4,
+      5
+    ],
+    "createdAt": "2025-06-10T12:22:15.895Z"
+  },
+  {
+    "id": 4,
+    "name": "Malinowa rozkosz",
+    "category": "Vodka",
+    "ingredients": [
+      "100ml Soplicy wiśniowej\r",
+      "100ml Sprite Zero\r",
+      "Dwie kostki lodu"
+    ],
+    "instructions": "Do sporego kieliszka od wina wlej kolejno składniki. \r\nDodaj kostki lodu.\r\nZamieszaj.\r\nCiesz się smakiem",
+    "rating": 4.5,
+    "ratings": [
+      5,
+      4
+    ],
+    "createdAt": "2025-06-10T12:25:13.176Z"
+  },
+  {
+    "id": 5,
+    "name": "Whiskey Sour",
+    "category": "Whiskey",
+    "ingredients": [
+      "50 ml whiskey\r",
+      "25 ml soku z cytryny\r",
+      "25 ml syropu cukrowego\r",
+      "20 ml białka jajka"
+    ],
+    "instructions": "Do shakera dodaj whiskey sok z cytryny oraz syrop cukrowy.\r\nDodaj białko.\r\nDodaj lód.\r\nEnergicznie wymieszaj.\r\nSmacznego",
+    "rating": 3.8,
+    "ratings": [
+      3,
+      2,
+      4,
+      5,
+      5
+    ],
+    "createdAt": "2025-06-10T16:48:04.822Z",
+    "updatedAt": "2025-06-10T16:51:01.191Z"
+  },
+  {
+    "id": 6,
+    "name": "Bezalkoholowe love",
+    "category": "Bezalkoholowe",
+    "ingredients": [
+      "80 ml soku z grejpfruta\r",
+      "60 ml soku z ananasa\r",
+      "40 ml bezalkoholowego soku ble curacao\r",
+      "dwie kostki lodu"
+    ],
+    "instructions": "Wszystkie składniki dodaj do shakera.\r\nDobrze wstrząśnij.\r\nSmacznego",
+    "rating": 2.7,
+    "ratings": [
+      2,
+      3,
+      3
+    ],
+    "createdAt": "2025-06-10T16:50:26.327Z",
+    "updatedAt": "2025-06-10T16:51:29.540Z"
+  },
+  {
+    "id": 7,
+    "name": "Tequilia dobra jak elf z cebulą",
+    "category": "Tequila",
+    "ingredients": [
+      "50 ml tequili\r",
+      "10 ml soku z limonki\r",
+      "dolać wybrane napój\r",
+      "lód"
+    ],
+    "instructions": "Dodaj składniki do shakera łącznie z lodem.\r\nDokładnie wymieszaj'\r\nSchłodzone smakuje najlepiej: smacznego",
+    "rating": 4,
+    "ratings": [
+      4
+    ],
+    "createdAt": "2025-06-10T16:55:36.013Z"
+  }
+]

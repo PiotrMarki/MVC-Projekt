@@ -1,0 +1,107 @@
+<%- include('../partials/header') %>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="mb-0">
+                    <i class="fas fa-edit text-primary me-2"></i>
+                    Edytuj: <%= cocktail.name %>
+                </h1>
+            </div>
+            
+            <div class="card-body">
+                <% if (typeof error !== 'undefined' && error) { %>
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <%= error %>
+                    </div>
+                <% } %>
+
+                <form method="POST" action="/cocktails/<%= cocktail.id %>/update">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">
+                            <i class="fas fa-cocktail me-2"></i>
+                            Nazwa koktajlu *
+                        </label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="name" 
+                            name="name" 
+                            value="<%= cocktail.name %>"
+                            required
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="category" class="form-label">
+                            <i class="fas fa-tags me-2"></i>
+                            Kategoria *
+                        </label>
+                        <select class="form-select" id="category" name="category" required>
+                            <option value="">Wybierz kategorię</option>
+                            <% if (categories && categories.length > 0) { %>
+                                <% categories.forEach(category => { %>
+                                    <option value="<%= category %>" <%= cocktail.category === category ? 'selected' : '' %>>
+                                        <%= category %>
+                                    </option>
+                                <% }); %>
+                            <% } %>
+                            <option value="Rum" <%= cocktail.category === 'Rum' ? 'selected' : '' %>>Rum</option>
+                            <option value="Vodka" <%= cocktail.category === 'Vodka' ? 'selected' : '' %>>Vodka</option>
+                            <option value="Whiskey" <%= cocktail.category === 'Whiskey' ? 'selected' : '' %>>Whiskey</option>
+                            <option value="Gin" <%= cocktail.category === 'Gin' ? 'selected' : '' %>>Gin</option>
+                            <option value="Tequila" <%= cocktail.category === 'Tequila' ? 'selected' : '' %>>Tequila</option>
+                            <option value="Bezalkoholowe" <%= cocktail.category === 'Bezalkoholowe' ? 'selected' : '' %>>Bezalkoholowe</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ingredients" class="form-label">
+                            <i class="fas fa-list-ul me-2"></i>
+                            Składniki *
+                        </label>
+                        <textarea 
+                            class="form-control" 
+                            id="ingredients" 
+                            name="ingredients" 
+                            rows="6" 
+                            required
+                        ><%= Array.isArray(cocktail.ingredients) ? cocktail.ingredients.join('\n') : cocktail.ingredients %></textarea>
+                        <div class="form-text">
+                            Wpisz każdy składnik w nowej linii
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="instructions" class="form-label">
+                            <i class="fas fa-clipboard-list me-2"></i>
+                            Instrukcje przygotowania *
+                        </label>
+                        <textarea 
+                            class="form-control" 
+                            id="instructions" 
+                            name="instructions" 
+                            rows="8" 
+                            required
+                        ><%= cocktail.instructions %></textarea>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-2"></i>
+                            Zapisz Zmiany
+                        </button>
+                        <a href="/cocktails/<%= cocktail.id %>" class="btn btn-outline-secondary">
+                            <i class="fas fa-times me-2"></i>
+                            Anuluj
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

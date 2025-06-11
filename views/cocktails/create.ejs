@@ -1,0 +1,120 @@
+<%- include('../partials/header') %>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-header">
+                <h1 class="mb-0">
+                    <i class="fas fa-plus text-primary me-2"></i>
+                    Dodaj Nowy Koktajl
+                </h1>
+            </div>
+            
+            <div class="card-body">
+                <% if (typeof error !== 'undefined' && error) { %>
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <%= error %>
+                    </div>
+                <% } %>
+
+                <form method="POST" action="/cocktails">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">
+                            <i class="fas fa-cocktail me-2"></i>
+                            Nazwa koktajlu *
+                        </label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="name" 
+                            name="name" 
+                            value="<%= typeof formData !== 'undefined' ? formData.name || '' : '' %>"
+                            required
+                            placeholder="np. Mojito, Cosmopolitan..."
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="category" class="form-label">
+                            <i class="fas fa-tags me-2"></i>
+                            Kategoria *
+                        </label>
+                        <select class="form-select" id="category" name="category" required>
+                            <option value="">Wybierz kategorię</option>
+                            <% if (categories && categories.length > 0) { %>
+                                <% categories.forEach(category => { %>
+                                    <option value="<%= category %>" 
+                                        <%= typeof formData !== 'undefined' && formData.category === category ? 'selected' : '' %>>
+                                        <%= category %>
+                                    </option>
+                                <% }); %>
+                            <% } %>
+                            <option value="Rum" <%= typeof formData !== 'undefined' && formData.category === 'Rum' ? 'selected' : '' %>>Rum</option>
+                            <option value="Vodka" <%= typeof formData !== 'undefined' && formData.category === 'Vodka' ? 'selected' : '' %>>Vodka</option>
+                            <option value="Whiskey" <%= typeof formData !== 'undefined' && formData.category === 'Whiskey' ? 'selected' : '' %>>Whiskey</option>
+                            <option value="Gin" <%= typeof formData !== 'undefined' && formData.category === 'Gin' ? 'selected' : '' %>>Gin</option>
+                            <option value="Tequila" <%= typeof formData !== 'undefined' && formData.category === 'Tequila' ? 'selected' : '' %>>Tequila</option>
+                            <option value="Bezalkoholowe" <%= typeof formData !== 'undefined' && formData.category === 'Bezalkoholowe' ? 'selected' : '' %>>Bezalkoholowe</option>
+                        </select>
+                        <div class="form-text">
+                            Lub wpisz własną kategorię w polu poniżej
+                        </div>
+                        <input 
+                            type="text" 
+                            class="form-control mt-2" 
+                            placeholder="Własna kategoria..."
+                            onchange="if(this.value) document.getElementById('category').value = this.value"
+                        >
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="ingredients" class="form-label">
+                            <i class="fas fa-list-ul me-2"></i>
+                            Składniki *
+                        </label>
+                        <textarea 
+                            class="form-control" 
+                            id="ingredients" 
+                            name="ingredients" 
+                            rows="6" 
+                            required
+                            placeholder="Wpisz każdy składnik w nowej linii, np.:&#10;50ml białego rumu&#10;30ml soku z limonki&#10;20ml syropu cukrowego&#10;8-10 listków mięty&#10;Woda gazowana&#10;Lód"
+                        ><%= typeof formData !== 'undefined' ? formData.ingredients || '' : '' %></textarea>
+                        <div class="form-text">
+                            Wpisz każdy składnik w nowej linii
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="instructions" class="form-label">
+                            <i class="fas fa-clipboard-list me-2"></i>
+                            Instrukcje przygotowania *
+                        </label>
+                        <textarea 
+                            class="form-control" 
+                            id="instructions" 
+                            name="instructions" 
+                            rows="8" 
+                            required
+                            placeholder="Opisz krok po kroku jak przygotować koktajl, np.:&#10;1. Wmuraj miętę z syropem w szklance&#10;2. Dodaj sok z limonki i rum&#10;3. Wypełnij szklankę lodem&#10;4. Dolej wodą gazowaną&#10;5. Wymieszaj delikatnie"
+                        ><%= typeof formData !== 'undefined' ? formData.instructions || '' : '' %></textarea>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-2"></i>
+                            Dodaj Koktajl
+                        </button>
+                        <a href="/cocktails" class="btn btn-outline-secondary">
+                            <i class="fas fa-times me-2"></i>
+                            Anuluj
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

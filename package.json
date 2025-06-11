@@ -1,0 +1,18 @@
+{
+  "name": "cocktail-recipes-mvc",
+  "version": "1.0.0",
+  "description": "Aplikacja do zarządzania przepisami na koktajle w architekturze MVC",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
