@@ -14,7 +14,7 @@ Będąc na stronie głównej możemy wejść w każdy wcześniej dodany koktail.
 Przy dodawaniu przepisu drugą czynnością jaką wykonujemy jest dodanie koktajlu do kategorii. Znajdując się na głównej stronie dostępna jest funkcja "FIltruj według kategorii". Kiedy wybierzemy naszą kategorię i naciśniemy "Filtruj" ukarzą się nam szukane koktaile.
 
 ## Wymagania systemowe
-Node.js w wersji 14.0.0 lub nowszej
+Node.js w wersji 14.0.0 lub nowszej /
 Node Package Manager w wersji 6.0.0 
 
 ## Sposób uruchomienia
