@@ -64,23 +64,23 @@ Przy dodawaniu przepisu drugą czynnością jaką wykonujemy jest dodanie koktaj
 - **Nazwa:** Mojito
 - **Kategoria:** Rum
 - **Składniki:** 
-  \`\`\`
+  
   50ml białego rumu
   30ml soku z limonki
   20ml syropu cukrowego
   8-10 listków świeżej mięty
   Woda gazowana
   Kostki lodu
-  \`\`\`
+  
 - **Instrukcje:** 
-  \`\`\`
+  
   1. Wmuraj delikatnie miętę z syropem w wysokiej szklance
   2. Dodaj sok z limonki i biały rum
   3. Wypełnij szklankę kostkami lodu
   4. Dolej wodą gazowaną do pełna
   5. Wymieszaj delikatnie łyżką
   6. Udekoruj gałązką mięty
-  \`\`\`
+  
 
 
 
