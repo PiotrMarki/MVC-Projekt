@@ -26,13 +26,13 @@
     "name": "Cosmopolitan",
     "category": "Vodka",
     "ingredients": [
-      "40ml wódki",
-      "15ml triple sec",
-      "30ml soku żurawinowego",
-      "15ml soku z limonki",
+      "40ml wódki\r",
+      "15ml triple sec\r",
+      "30ml soku żurawinowego\r",
+      "15ml soku z limonki\r",
       "Skórka pomarańczy"
     ],
-    "instructions": "1. Wszystkie składniki wstrząśnij z lodem w shakerze\n2. Przecedź do schłodzonej szklanki martini\n3. Udekoruj skórką pomarańczy",
+    "instructions": "1. Wszystkie składniki wstrząśnij z lodem w shakerze\r\n2. Przecedź do schłodzonej szklanki martini\r\n3. Udekoruj skórką pomarańczy",
     "rating": 3.7,
     "ratings": [
       4,
@@ -42,7 +42,8 @@
       3,
       2
     ],
-    "createdAt": "2025-06-10T12:22:15.895Z"
+    "createdAt": "2025-06-10T12:22:15.895Z",
+    "updatedAt": "2025-06-11T11:59:03.680Z"
   },
   {
     "id": 3,
@@ -103,7 +104,7 @@
       5
     ],
     "createdAt": "2025-06-10T16:48:04.822Z",
-    "updatedAt": "2025-06-10T16:51:01.191Z"
+    "updatedAt": "2025-06-11T11:56:17.893Z"
   },
   {
     "id": 6,
