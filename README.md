@@ -6,6 +6,11 @@ Aplikacja webowa "Kolekcja Koktaili" została stworzona przy użyciu architektó
 ## Lista funkcjonalności 
 ### Możliwość dodania nowych przepisów z listą składnjików instrukcjami oraz kategorią - 
 Na stronie głównej znajduje się przycisk "Dodaj koktail" który przenosi nas do okna w którym możemy: Dodać koktail, Przydzielić go do wybranej kategorii, Napisać listę składników oraz Napisać przepis na dany koktail. Po naciśnięciu dodaj koktail zostanie on dodany do naszej bazy koktail która znajduje się na stronie głównej.
+#### Dodawanie nowego koktajlu:
+- **Nazwa** (wymagane): tekst, 3-100 znaków
+- **Kategoria** (wymagane): wybór z listy lub własna kategoria
+- **Składniki** (wymagane): tekst wieloliniowy, każdy składnik w nowej linii
+- **Instrukcje** (wymagane): tekst wieloliniowy z krokami przygotowania
 
 ### Możliwość edytowania oraz oceniania przepisów - 
 Będąc na stronie głównej możemy wejść w każdy wcześniej dodany koktail. Edycje możemy zacząć juz z strony tytułowej klikając "Edytuj" Lub po wejściu w okno koktailu naciskając "Edytuj przepis". Powyższe czynności przenoszą nas do formularza w którym możemy zmienić wcześniej zapisane informacje i naszym koktajlu. Po naciśnięciu "Zapisz zmiany" przepis zaostaanie zaktualizowany. Jest również możliwość oceny koktaili w zkali od 1 do 5. Przydatna funkcja zwłaszcze pośród znajomych. Każdy zaznacza swoją opinię o średnia ocen wyświetla się przy przepisie.
@@ -53,6 +58,29 @@ Przy dodawaniu przepisu drugą czynnością jaką wykonujemy jest dodanie koktaj
 - **`cocktails/edit.ejs`** - formularz edycji istniejącego koktajlu
 - **`404.ejs`** - strona błędu 404 dla nieistniejących zasobów
 - **`error.ejs`** - strona błędów ogólnych z komunikatami dla użytkownika
+
+## Przykładowe dane wejściowe
+### Koktajl 1: Mojito
+- **Nazwa:** Mojito
+- **Kategoria:** Rum
+- **Składniki:** 
+  \`\`\`
+  50ml białego rumu
+  30ml soku z limonki
+  20ml syropu cukrowego
+  8-10 listków świeżej mięty
+  Woda gazowana
+  Kostki lodu
+  \`\`\`
+- **Instrukcje:** 
+  \`\`\`
+  1. Wmuraj delikatnie miętę z syropem w wysokiej szklance
+  2. Dodaj sok z limonki i biały rum
+  3. Wypełnij szklankę kostkami lodu
+  4. Dolej wodą gazowaną do pełna
+  5. Wymieszaj delikatnie łyżką
+  6. Udekoruj gałązką mięty
+  \`\`\`
 
 
 
